@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <div>App</div>
+  )
 }
 
-export default App;
+export default App
+
+function jsonMethods(jsonString) {
+  console.log("Original JSON String:", jsonString);
+
+  // Parsing JSON string to JavaScript object
+  let parsedObject = JSON.parse(jsonString);
+  console.log("After JSON.parse():", parsedObject);
+
+  // Stringifying JavaScript object to JSON string
+  let jsonStringified = JSON.stringify(parsedObject);
+  console.log("After JSON.stringify():", jsonStringified);
+}
+
+// Example Usage for JSON Methods
+const sampleJSONString =
+  '{"key": "value", "number": 42, "nested": {"nestedKey": "nestedValue"}}';
+
+jsonMethods(sampleJSONS
