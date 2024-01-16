@@ -1,4 +1,7 @@
 # Getting Started with Create React App
+Live link : https://react-basics-sooty.vercel.app/
+![Travel-list](https://github.com/Vargos98/react-basics/assets/127929058/b27e6d59-4975-4149-872c-6e0df9dd4c8f)
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
