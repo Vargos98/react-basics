@@ -1,0 +1,19 @@
+{
+  "mobiles": [
+    {
+      "title": "iPhone 13 Pro",
+      "image": "iphone_13_pro.jpg",
+      "price": 999
+    },
+    {
+      "title": "Samsung Galaxy S21 Ultra",
+      "image": "samsung_galaxy_s21_ultra.jpg",
+      "price": 1199
+    },
+    {
+      "title": "Google Pixel 6 Pro",
+      "image": "google_pixel_6_pro.jpg",
+      "price": 899
+    }
+  ]
+}
