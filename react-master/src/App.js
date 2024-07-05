@@ -1,12 +1,12 @@
 import React from 'react'
-// import Card from './Components/Card'
-import Logo from './Assets/logo.png';
+import Card from './Card'
 
 const App = () => {
   return (
-    
-  );
-};
+    <div>
+      <Card/>
+    </div>
+  )
+}
 
-export default App;
-
+export default App
