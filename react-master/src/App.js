@@ -1,10 +1,10 @@
 import React from 'react'
-import Card from './Card'
+import CardTwo from './CardTwo'
 
 const App = () => {
   return (
     <div>
-      <Card/>
+      <CardTwo/>
     </div>
   )
 }
