@@ -17,7 +17,7 @@ let[count, updateCount] = useState(0);
 // } 
 return (
     <div className='w-full h-screen bg-zinc-500 flex justify-center items-center flex-col'>
-      <h1 className='text-7xl text-white'>{count}</h1>
+      <h1 className='text-9xl text-white mb-20 font-bold'>{count}</h1>
       <div className='flex justify-center items-center gap-5 mt-10'>
         <button onClick={()=>{updateCount(count+1)}} className='px-6 py-2 bg-red-600 rounded-full text-white text-2xl '>Increment</button>
         <button onClick={()=>{
