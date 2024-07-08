@@ -1,26 +1,29 @@
 import React, { useState } from "react";
 
 const UpdateVal = () => {
-  const [val, setVal] = useState([1,2,3,4,5,6,7,8,9,10]);
+  const [val, setVal] = useState([
+    {name: "umesh",age:24},
+    {name: "ramesh",age:24},
+    {name: "suresh",age:24},
+
+  ]);
 
   return (
-    <div className="w-full h-screen bg-zinc-900 flex justify-center items-center flex-col">
+    <div className="w-full h-['100%'] bg-zinc-900 flex justify-center items-center flex-col">
       
       {val.map(item=>
-        <h1 className="text-4xl text-white mt-3">{item}</h1>
+        <div>
+        <h1 className="text-4xl text-white mt-3">{item.name}</h1>
+        <h2 className="text-4xl text-white mt-3">{item.age}</h2>
+        </div>
       )}
       
-      
-      <button
-        onClick={() => {
-          setVal(()=>val.filter((item,index)=> index !== val.length-1) );
-          console.log(val);
-          
-        }}
-        className="px-6 py-2 bg-black rounded-full text-white text-2xl mt-10"
-      >
-        Click
+     <button  
+        >
+        Update
       </button>
+
+     
     </div>
   );
 };
