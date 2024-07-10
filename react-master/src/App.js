@@ -7,6 +7,7 @@ import NewVal from './NewVal'
 import ImageSlider from './ImageSlider'
 import Drilling from './Drilling'
 import Button from './Button'
+import RefForm from './RefForm'
 
 
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
       <ImageSlider/>
       <Drilling/>
       <Button text="13" color="bg-red-700"/>
+      <RefForm />
     </div>
   )
 }
