@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import CardTwo from './CardTwo'
 import Counter from './Counter'
 import Banned from './Banned'
@@ -8,9 +8,13 @@ import ImageSlider from './ImageSlider'
 import Drilling from './Drilling'
 import Button from './Button'
 import RefForm from './RefForm'
+import ReactHook from './ReactHook'
 
 
 const App = () => {
+
+  const [users, setUsers] = useState([]);
+
   return (
     <div>
 
@@ -20,9 +24,10 @@ const App = () => {
       <UpdateVal />
       <NewVal/>
       <ImageSlider/>
-      <Drilling/>
-      <Button text="13" color="bg-red-700"/>
-      <RefForm />
+      {/* <Drilling/> */}
+      {/* <Button text="13" color="bg-red-700"/>
+      <RefForm /> */}
+      <ReactHook/>
     </div>
   )
 }
