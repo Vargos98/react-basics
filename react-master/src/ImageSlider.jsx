@@ -4,6 +4,8 @@ import { BiDownArrowAlt } from "react-icons/bi"
 const ImageSlider = () => {
   
   const [val,setVal] = useState(false);
+
+  
   return (
    
     <div className='w-full h-screen flex items-center justify-center bg-zinc-800'
@@ -16,6 +18,9 @@ const ImageSlider = () => {
       <BiDownArrowAlt  size={25} />
       </span>
     </div>
+
+    
+
 
     </div>
   )
