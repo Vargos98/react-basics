@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 
 
@@ -13,6 +13,11 @@ const Axios = () => {
       setProducts(products.data);
     }).catch(err => console.error(err));
   };
+
+  useEffect(()=>{
+    getproducts();
+    // Add your own cleanup logic here if needed
+  })
   
   
   // Method to get Add products
