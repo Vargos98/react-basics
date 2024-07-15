@@ -9,11 +9,13 @@ import ImageSlider from './ImageSlider'
 // import Button from './Button'
 // import RefForm from './RefForm'
 import ReactHook from './ReactHook'
+import Axios from './Axios'
 
 
 const App = () => {
 
   // const [users, setUsers] = useState([]);
+ 
 
   return (
     <div>
@@ -28,6 +30,7 @@ const App = () => {
       {/* <Button text="13" color="bg-red-700"/>
       <RefForm /> */}
       <ReactHook/>
+      <Axios/>
     </div>
   )
 }
