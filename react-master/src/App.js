@@ -10,6 +10,7 @@ import ImageSlider from './ImageSlider'
 // import RefForm from './RefForm'
 import ReactHook from './ReactHook'
 import Axios from './Axios'
+import Fetch from './Fetch'
 
 
 const App = () => {
@@ -31,6 +32,7 @@ const App = () => {
       <RefForm /> */}
       <ReactHook/>
       <Axios/>
+      <Fetch />
     </div>
   )
 }

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import axios from 'axios';
-import errorcode from 'qr-image/lib/errorcode';
+
 
 const Axios = () => {
   const [products,setProducts] =useState([]);
