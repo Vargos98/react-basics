@@ -10,7 +10,10 @@ const User = () => {
     </div>
     <div>
       {users.map((user)=>{ return(
+        <div>
         <p>{user.name}</p>
+        <h1>{user.city}</h1>
+        </div>
 
       )
         
