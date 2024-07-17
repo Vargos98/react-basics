@@ -1,6 +1,6 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { decrement, increamentByFive, increment, reset } from './reducers/counterSlice'
+import { decrement, incrementByFive, increment, reset } from './reducers/counterSlice'
 
 const App = () => {
   const {value} =useSelector((state)=>state.counter)
@@ -16,7 +16,7 @@ const App = () => {
         <button className='px-5 py-2 bg-red-700 rounded-full' onClick={()=>dispatch(increment())}>Increment</button>
         <button className='px-5 py-2 bg-blue-700 rounded-full' onClick={()=>dispatch(decrement())}>Decrement</button>
         <button className='px-5 py-2 bg-green-700 rounded-full' onClick={()=>dispatch(reset())}>reset</button>
-        <button className='px-5 py-2 bg-yellow-700 rounded-full' onClick={()=>dispatch(increamentByFive())}>Incremnet by 5</button>
+        <button className='px-5 py-2 bg-yellow-700 rounded-full' onClick={()=>dispatch(incrementByFive(5))}>Incremnet by 5</button>
       </div>
 
     </div>
