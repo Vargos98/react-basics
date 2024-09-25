@@ -1,3 +1,4 @@
+import { useState } from "react";
 import React from 'react';
 
 const App = () => {
@@ -45,6 +46,11 @@ const App = () => {
     
   ];
 
+  const  [Val, setVal] = useState({
+    name: 'Umesh',
+    age:26,
+  });
+
   return (
     <div className='flex gap-10 mt-10 justify-center flex-wrap'>    
       {data.map((item, index) => (
@@ -57,6 +63,10 @@ const App = () => {
           <button className={` text-white ${item.inStock ? `bg-blue-500` : `bg-green-500`} hover:bg-blue-600 rounded-md px-4 py-2 mt-5 ml-16`}>{item.inStock ? "In Stock" : "Out of Stock"}</button>
         </div>
       ))}
+
+
+
+
     </div>
   );
 };
